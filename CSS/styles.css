@@ -1,7 +1,6 @@
 body {
 margin: 0;
-font-family: Arial, sans-serif;
-
+font-family: 'Poppins', sans-serif;
 background-image: url("../imagenes/ImagenFondo3.jpg");
 background-size: cover;
 background-position: center;
@@ -10,15 +9,67 @@ background-repeat: no-repeat;
 
 .hero {
 height: 100vh;
+padding-top: 80px;
+color: white;
 }
 
 .hero h1 {
-font-size: 4.0rem;
-margin: 0;
-font-family: 'Boldonse', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
 }
 
 .hero h2 {
-font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+.p-3 {
+background: rgba(255, 255, 255, 0.8);
+border-radius: 10px;
+transition: transform 0.3s;
+}
+
+.p-3:hover {
+transform: translateY(-10px);
+}
+
+.barra-superior {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.superior-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    background: #064f54;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.nombre {
+    color: white;
+}
+
+.superior-derecha a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.superior-derecha a:hover {
+    opacity: 0.7;
 }
 
