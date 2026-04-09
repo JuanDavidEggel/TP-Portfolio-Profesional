@@ -1,43 +1,15 @@
-body {
-margin: 0;
-font-family: 'Poppins', sans-serif;
-background-image: url("../imagenes/ImagenFondo3.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-}
-
-.hero {
-height: 100vh;
-padding-top: 80px;
-color: white;
-}
-
-.hero h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
-}
-
-.hero h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-}
-
-.p-3 {
-background: rgba(255, 255, 255, 0.8);
-border-radius: 10px;
-transition: transform 0.3s;
-}
-
-.p-3:hover {
-transform: translateY(-10px);
+body { /*Etiqueta*/
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../imagenes/ImagenFondo3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .barra-superior {
-    position: absolute;
-    top: 0;
     width: 100%;
-    padding: 15px 0;
+    padding: 15px;
 }
 
 .superior-izquierda {
@@ -63,13 +35,43 @@ transform: translateY(-10px);
     color: white;
 }
 
-.superior-derecha a {
-    margin-left: 20px;
-    text-decoration: none;
+.superior-derecha a { /*Selector tipo clase con "a" que es una etiqueta*/
+    margin-left: 20px; /*Propiedad y valor*/
     color: white;
 }
 
-.superior-derecha a:hover {
+.superior-derecha a:hover { /*Mouse pasa por link, selector específico*/
     opacity: 0.7;
 }
 
+.portada {
+    height: 100vh;
+    color: rgb(255, 255, 255);
+}
+
+.portada h1 { /*Selector combinado, dentro de .portada se selecciona h1*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+}
+
+.portada h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+.tarjeta {
+    background: rgba(158, 241, 249, 0.8);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.mi-boton {
+    background-color: #064f54;
+    color: white;
+    border: none;
+}
